@@ -1,0 +1,22 @@
+paths:
+  normal: "/path/to/normal/h5/files/"         # Path to the directory containing normal samples
+  tumor: "/path/to/tumor/h5/files/"           # Path to the directory containing tumor samples
+  test: "/path/to/test/h5/files/"             # Path to the directory containing test samples
+  mask_dir: "/path/to/mask/files/"            # Path to the directory containing segmentation masks
+  output_file: "/path/to/save/test_labels.csv" # Path to save output test labels
+
+model:
+  class: "<model_class>"                      # Model class, e.g., 'clam-mb', 'clam-sb', 'abmil', 'transmil', 'Insight'
+  checkpoint: "/path/to/model/checkpoint.pth" # Path to the pre-trained model checkpoint
+
+evaluation:
+  type: "<evaluation_type>"                   # Type of evaluation, e.g., 'auc' or 'dice'
+  threshold: <threshold_value>                # Threshold for segmentation predictions (used for Dice score evaluation)
+
+dataloader:
+  split_ratios: <split_ratios>                # Ratios for train, validation splits
+  batch_size: <batch_size>                    # Batch size for data loading
+  seed: <random_seed>                         # Seed for reproducibility
+
+logging:
+  save_dir: "/path/to/save/evaluation/results/" # Directory to save evaluation results
