@@ -55,13 +55,13 @@ To train the model, run the following commands with your custom configuration fi
 - For WSI training:
 
   ```bash
-  python3 train_WSI.py --config /path/to/your/config/file/
+  python3 train_pathology.py --config /path/to/your/config/file/
   ```
 
 - For CT training:
 
   ```bash
-  python3 train_CT.py --config /path/to/your/config/file/
+  python3 train_medical.py --config /path/to/your/config/file/
   ```
 
 Example training configuration files are provided in:
@@ -74,7 +74,7 @@ Example training configuration files are provided in:
 Evaluate the model using:
 
 ```bash
-python3 evaluate.py --config /path/to/your/config/file/
+python3 evaluation.py --config /path/to/your/config/file/
 ```
 
 An example evaluation configuration file is available at:
