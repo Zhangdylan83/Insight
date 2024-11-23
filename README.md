@@ -94,10 +94,10 @@ Results will be saved in the specified output directory.
   ```bash
   conda env create -f environment.yml
   ```
-Then activate the environment:
-  ```bash
-  conda activate <environment_name>
-  ```
+  Then activate the environment:
+    ```bash
+    conda activate <environment_name>
+    ```
 - **Access Approvals**: Obtain prior access approval for:
   - **UNI** pretrained model
   - **BRACS** dataset
