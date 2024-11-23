@@ -21,9 +21,9 @@ Use the **[LungMask](https://github.com/JoHof/lungmask)** tool to generate lung 
 Run the following command to crop the lung regions using the generated masks:
 
 ```bash
-python3 save_crop.py \
-  --original_folder /path/to/original/dataset/ \
-  --mask_folder /path/to/lung/masks/ \
+python3 save_crop.py 
+  --original_folder /path/to/original/dataset/ 
+  --mask_folder /path/to/lung/masks/ 
   --output_folder /path/to/save/lung/crops/
 ```
 
@@ -32,7 +32,7 @@ python3 save_crop.py \
 Extract and store feature embeddings by executing:
 
 ```bash
-python3 store_embedding.py --file_paths /path/to/lung/crops/ \
+python3 store_embedding.py --file_paths /path/to/lung/crops/ 
                            --save_folder /path/to/save/feature/embeddings/
 ```
 
