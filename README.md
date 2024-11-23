@@ -84,7 +84,7 @@ An example evaluation configuration file is available at:
 The evaluation step supports both **AUC** (for classification) and **Dice scores** (for segmentation). Ensure your configuration file specifies:
 
 - The evaluation type (classification or segmentation)
-- Required thresholds
+- Required thresholds (if segmentation)
 
 Results will be saved in the specified output directory.
 
