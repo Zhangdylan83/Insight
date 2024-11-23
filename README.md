@@ -66,8 +66,8 @@ To train the model, run the following commands with your custom configuration fi
 
 Example training configuration files are provided in:
 
-- `config/train_WSI.yaml`
-- `config/train_CT.yaml`
+- `config/train_pathology.yaml`
+- `config/train_medical.yaml`
 
 ## 4. Evaluation
 
